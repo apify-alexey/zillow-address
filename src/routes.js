@@ -104,7 +104,7 @@ exports.restoreFullAddress = async (cityList, dataArray, proxyConfiguration) => 
     }
     cityList.push(cityJson.body)
     log.debug(`Mapped city ${cityJson.body.display_name}`)
-    normalizedAddressList.push(`${number} ${street}, ${cityJson.displayName}`)
+    normalizedAddressList.push(`${number} ${street}, ${cityJson.body.display_name}`)
   }
 
   return normalizedAddressList
