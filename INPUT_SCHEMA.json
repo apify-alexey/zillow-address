@@ -7,6 +7,7 @@
     "startUrl": {
       "title": "Custom data file URL",
       "type": "string",
+      "editor": "textfield",
       "description": "Plain text file with geojson lines"
     },
     "proxyConfig": {
@@ -21,16 +22,19 @@
     "kvGeoStoreName": {
       "title": "KV Store for cities data",
       "type": "string",
+      "editor": "textfield",
       "description": "KV Store for cities data"
     },
     "zestimateActorPath": {
       "title": "Path to zestimate-scraper",
       "type": "string",
+      "editor": "textfield",
       "description": "Path to zestimate-scraper"
     },
     "dedupeActorPath": {
       "title": "Path to dedup-datasets",
       "type": "string",
+      "editor": "textfield",
       "description": "Path to dedup-datasets"
     }
   },
