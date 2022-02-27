@@ -1,0 +1,40 @@
+{
+  "title": "zillow-address",
+  "description": "Normalize addresses from geojson URL and process them by Zillow Scraper.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrl": {
+      "title": "Custom data file URL",
+      "type": "string",
+      "description": "Plain text file with geojson lines"
+    },
+    "proxyConfig": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "You need to use Apify proxy or custom proxies.",
+      "prefill": {
+          "useApifyProxy": true
+      },
+      "editor": "proxy"
+    },
+    "kvGeoStoreName": {
+      "title": "KV Store for cities data",
+      "type": "string",
+      "description": "KV Store for cities data"
+    },
+    "zestimateActorPath": {
+      "title": "Path to zestimate-scraper",
+      "type": "string",
+      "description": "Path to zestimate-scraper"
+    },
+    "dedupeActorPath": {
+      "title": "Path to dedup-datasets",
+      "type": "string",
+      "description": "Path to dedup-datasets"
+    }
+  },
+  "required": [
+    "startUrl"
+  ]
+}

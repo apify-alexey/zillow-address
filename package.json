@@ -1,0 +1,22 @@
+{
+	"name": "zillow-address",
+	"version": "0.0.1",
+	"description": "Normalize addresses from geojson URL and process them by Zillow Scraper.",
+	"dependencies": {
+		"apify": "^2.1.0"
+	},
+	"devDependencies": {
+		"@apify/eslint-config": "^0.2.2",
+		"eslint": "^7.12.1",
+		"eslint-config-standard": "^16.0.3",
+		"standard": "^16.0.4"
+	},
+	"scripts": {
+		"start": "node main.js",
+		"lint": "eslint ./src --ext .js,.jsx",
+		"lint:fix": "eslint ./src --ext .js,.jsx --fix",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	},
+	"author": "Alexey Udovydchenko",
+	"license": "ISC"
+}
